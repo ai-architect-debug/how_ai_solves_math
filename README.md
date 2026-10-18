@@ -13,7 +13,8 @@
 This work covers **six canonical STEM mathematics textbooks** in strict sequence:
 
 1. **Volume 1 (`v1` — This Repository)**  
-   - Selects **20 representative problems** from each of the 6 subject areas (**120 problems total**).
+   - Selects **120 representative problems**, spread evenly across the chapters and sections of each textbook (24 / 24 / 24 / 24 / 1 / 23 per subject area).
+   - Every problem's scan, statement and textbook answer were checked by eye to make sure they belong together.
    - Evaluates and compares four AI/symbolic mathematical problem-solving methods side-by-side against textbook ground truth:
      1. **Wolfram Mathematica** (`wolframcard`) — Symbolic CAS derivation & verification (`In[n]:=` / `Out[n]=`).
      2. **Claude Opus** (`claudecard`) — Analytical & pedagogical proof-style derivation.
@@ -22,7 +23,7 @@ This work covers **six canonical STEM mathematics textbooks** in strict sequence
      5. **Textbook Ground Truth** (`answercard`) — Canonical textbook answer & verification.
 
 2. **Volume 2 (`v2`)**  
-   - Compiles **all 8,365 problems** from the same 6 textbooks as a comprehensive benchmark (*How AI Solves Math: Appendix Problem Sets*).
+   - Compiles **all 8,365 problems** from the same 6 textbooks as a comprehensive benchmark (*How AI Solves Math: Appendix Problem Sets*). In preparation.
 
 ---
 
@@ -30,19 +31,22 @@ This work covers **six canonical STEM mathematics textbooks** in strict sequence
 
 | Chapter | Dataset ID | Subject Area | Source Textbook & Authors | Problems |
 | :---: | :--- | :--- | :--- | :---: |
-| **Chapter 1** | `12_Demidovich` | Mathematical Analysis | *Problems in Mathematical Analysis* — B. P. Demidovich | 20 |
-| **Chapter 2** | `17_Tenenbaum_Pollard` | Ordinary Differential Equations | *Ordinary Differential Equations* — M. Tenenbaum & H. Pollard | 20 |
-| **Chapter 3** | `15_Proskuryakov` | Linear Algebra | *Problems in Linear Algebra* — I. V. Proskuryakov | 20 |
-| **Chapter 4** | `20_JacquesV1` | Plane Geometry | *Lessons in Geometry, Vol. I: Plane Geometry* — J. Hadamard | 20 |
-| **Chapter 5** | `21_JacquesV2` | Solid Geometry | *Leçons de Géométrie Élémentaire, Vol. II: Géométrie dans l'Espace* — J. Hadamard | 20 |
-| **Chapter 6** | `19_Riley` | Physics & Engineering Math | *Mathematical Methods for Physics and Engineering* — Riley, Hobson & Bence | 20 |
+| **Chapter 1** | `12_Demidovich` | Mathematical Analysis | *Problems in Mathematical Analysis* — B. P. Demidovich | 24 |
+| **Chapter 2** | `17_Tenenbaum_Pollard` | Ordinary Differential Equations | *Ordinary Differential Equations* — M. Tenenbaum & H. Pollard | 24 |
+| **Chapter 3** | `15_Proskuryakov` | Linear Algebra | *Problems in Linear Algebra* — I. V. Proskuryakov | 24 |
+| **Chapter 4** | `20_JacquesV1` | Plane Geometry | *Lessons in Geometry, Vol. I: Plane Geometry* — J. Hadamard | 24 |
+| **Chapter 5** | `21_JacquesV2` | Solid Geometry | *Leçons de Géométrie Élémentaire, Vol. II: Géométrie dans l'Espace* — J. Hadamard | 1 (placeholder) |
+| **Chapter 6** | `19_Riley` | Physics & Engineering Math | *Mathematical Methods for Physics and Engineering* — Riley, Hobson & Bence | 23 |
 | **Total** | **6 Fields** | **Full STEM Spectrum** | **6 Canonical Textbooks** | **120** |
+
+Chapter 5 holds a single problem while the source data for the solid-geometry volume is being corrected.
 
 ---
 
 ## 3. Format & Layout
 
 - **Format**: Landscape A3 Side-by-Side Bilingual Book (`420mm × 297mm`, English on Left, Chinese on Right).
-- **Spreads**: 687 spreads, 0 blank pages.
+- **Spreads**: 668 spreads, 0 blank pages; every English page is matched 1-to-1 by its Chinese page.
 - **Markers**: Paragraph-level `pnnnnn0` location markers for 1-to-1 bilingual alignment.
+- **Chinese text**: Translated block by block with Gemma-4-31B; formulas and code are kept unchanged.
 - **PDF File**: [`How AI Solves Math.pdf`](How%20AI%20Solves%20Math.pdf)
