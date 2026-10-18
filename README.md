@@ -3,6 +3,7 @@
 **Repository:** `https://github.com/ai-architect-debug/how_ai_solves_math`  
 **Author:** `ai-architect-debug` (`bbinumich@gmail.com`)  
 **Book Download:** [How AI Solves Math.pdf](How%20AI%20Solves%20Math.pdf)
+**Website:** `https://ai.ai/how_ai_solves_math/`  
 
 ---
 
