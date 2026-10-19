@@ -46,7 +46,7 @@ Hadamard's Volume II has no answer section, so Chapter 5's answer cards say the 
 ## 3. Format & Layout
 
 - **Format**: Landscape A3 Side-by-Side Bilingual Book (`420mm × 297mm`, English on Left, Chinese on Right).
-- **Spreads**: 643 spreads, 0 blank pages; every English page is matched 1-to-1 by its Chinese page.
+- **Spreads**: 664 spreads, 0 blank pages; every English page is matched 1-to-1 by its Chinese page.
 - **Markers**: Paragraph-level `pnnnnn0` location markers for 1-to-1 bilingual alignment.
 - **Chinese text**: Translated block by block with Gemma-4-31B; formulas and code are kept unchanged.
 - **PDF File**: [`How AI Solves Math.pdf`](How%20AI%20Solves%20Math.pdf)
